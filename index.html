@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <header>
@@ -14,17 +15,21 @@
             <div class="logo">
                 <i class="fas fa-laptop-code"></i> Victor Mulinge Muendo
             </div>
-            <ul class="nav-links">
-                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
-                <li><a href="#skills"><i class="fas fa-tools"></i> Skills</a></li><br>
-                
-                               
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" onclick="hideMenu()"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#skills" onclick="hideMenu()"><i class="fas fa-laptop-code"></i> Skills</a></li>
+                <li><a href="#projects" onclick="hideMenu()"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                <li><a href="#services" onclick="hideMenu()"><i class="fas fa-concierge-bell"></i> Services</a></li>
+                <li><a href="#blog" onclick="hideMenu()"><i class="fas fa-blog"></i> Blog</a></li>
+                <li><a href="#cv" onclick="hideMenu()"><i class="fas fa-file-alt"></i> CV</a></li>
+                <li><a href="#certificates" onclick="hideMenu()"><i class="fas fa-certificate"></i> Certificates</a></li>
+                <li><a href="#contact" onclick="hideMenu()"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
-            
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
-        
     </header>
-    
     <section id="hero">
         <div class="hero-content">
             <h1>Victor Mulinge Muendo</h1>
@@ -89,7 +94,7 @@ Victor's dedication to his work is paralleled by his faith. He approaches challe
             <div class="project">
                 <h3><i class="fas fa-heart"></i> Love Calculator</h3>
                 <p>A fun app that calculates the compatibility between two people based on various metrics.</p>
-                <a href="https://lovecalculation.vercel.app" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
             </div>
             <div class="project">
                 <h3><i class="fas fa-bug"></i> Pest Control Advertising App</h3>
@@ -108,6 +113,189 @@ Victor's dedication to his work is paralleled by his faith. He approaches challe
             </div>
         </div>
     </section>
+    
+    <section id="services">
+        <h2>Services</h2>
+        <div class="services">
+            <div class="service">
+                <i class="fas fa-code"></i>
+                <h3>Website Development</h3>
+                <p>Building responsive and dynamic websites tailored to your needs.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-server"></i>
+                <h3>Web Application Development</h3>
+                <p>Creating robust web applications to streamline your business processes.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-database"></i>
+                <h3>Database Design and Management</h3>
+                <p>Designing and managing databases to ensure efficient data handling.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-plug"></i>
+                <h3>API Development and Integration</h3>
+                <p>Developing and integrating APIs for seamless data exchange between systems.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-paint-brush"></i>
+                <h3>UX/UI Design</h3>
+                <p>Designing user-friendly interfaces to enhance user experience.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-laptop-medical"></i>
+                <h3>IT Support and Consulting</h3>
+                <p>Providing IT support and consulting services to optimize your technology usage.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-network-wired"></i>
+                <h3>Network Configuration and Management</h3>
+                <p>Configuring and managing networks to ensure reliable connectivity.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-vial"></i>
+                <h3>Software Testing and Quality Assurance</h3>
+                <p>Ensuring the quality and reliability of software through rigorous testing.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-cloud"></i>
+                <h3>Cloud Solutions</h3>
+                <p>Offering scalable cloud solutions to enhance your business operations.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-search"></i>
+                <h3>SEO Optimization</h3>
+                <p>Improving your website’s visibility on search engines through effective SEO strategies.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-lock"></i>
+                <h3>Cybersecurity</h3>
+                <p>Providing comprehensive security solutions to protect your digital assets.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-microchip"></i>
+                <h3>Hardware Installation and Maintenance</h3>
+                <p>Installing and maintaining hardware components for optimal performance.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-tools"></i>
+                <h3>Software Installation and Troubleshooting</h3>
+                <p>Installing and troubleshooting software to ensure smooth operations.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-laptop"></i>
+                <h3>Computer Hardware Repairs</h3>
+                <p>Diagnosing and repairing hardware issues to keep your systems running smoothly.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-print"></i>
+                <h3>Printer Setup and Maintenance</h3>
+                <p>Setting up and maintaining printers for efficient and reliable operation.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Data Backup and Recovery</h3>
+                <p>Implementing backup solutions and recovering lost data to ensure business continuity.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-wifi"></i>
+                <h3>Wireless Network Setup</h3>
+                <p>Setting up and securing wireless networks for seamless connectivity.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-chart-line"></i>
+                <h3>Excel Data Analysis</h3>
+                <p>Performing complex data analysis and visualization using Microsoft Excel.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-chart-pie"></i>
+                <h3>Excel Financial Modeling</h3>
+                <p>Creating detailed financial models and forecasts using Microsoft Excel.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-chart-bar"></i>
+                <h3>Excel Automation with Macros</h3>
+                <p>Automating repetitive tasks and processes using Excel macros and VBA.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-file-word"></i>
+                <h3>Word Document Formatting</h3>
+                <p>Professional document formatting and styling using Microsoft Word.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-file-powerpoint"></i>
+                <h3>PowerPoint Presentation Design</h3>
+                <p>Designing engaging and impactful presentations using Microsoft PowerPoint.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-calendar-alt"></i>
+                <h3>Outlook Email and Calendar Management</h3>
+                <p>Organizing and managing your email and calendar effectively using Microsoft Outlook.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-users-cog"></i>
+                <h3>Microsoft Teams Collaboration</h3>
+                <p>Enhancing team collaboration and communication using Microsoft Teams.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h3>Training and Workshops</h3>
+                <p>Offering training sessions or workshops on specific skills or tools.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-bullhorn"></i>
+                <h3>Digital Marketing</h3>
+                <p>Providing comprehensive digital marketing services to grow your online presence.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-file-alt"></i>
+                <h3>Technical Writing</h3>
+                <p>Creating technical documentation and user manuals to support your products.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-project-diagram"></i>
+                <h3>Project Management</h3>
+                <p>Managing IT and software development projects to ensure timely delivery.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-shopping-cart"></i>
+                <h3>E-commerce Solutions</h3>
+                <p>Developing and maintaining e-commerce platforms for your business.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Custom Software Development</h3>
+                <p>Building custom software solutions tailored to your specific needs.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Mobile Device Management</h3>
+                <p>Managing and securing mobile devices within your organization.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-cogs"></i>
+                <h3>IT Infrastructure Planning</h3>
+                <p>Designing and planning IT infrastructure to support your business goals.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-chart-area"></i>
+                <h3>Business Intelligence</h3>
+                <p>Implementing BI solutions to help you make data-driven decisions.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-headset"></i>
+                <h3>Tech Support for Remote Workers</h3>
+                <p>Providing technical support for employees working remotely.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-sitemap"></i>
+                <h3>System Analysis and Design</h3>
+                <p>Analyzing and designing systems to meet your business requirements.</p>
+            </div>
+        </div>
+    </section>
+    
+    
     
     
     
