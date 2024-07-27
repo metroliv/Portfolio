@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Mulinge Muendo - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-laptop-code"></i> Victor Mulinge Muendo
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#skills"><i class="fas fa-tools"></i> Skills</a></li>
+                <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                
+                <li><a href="#blog"><i class="fas fa-blog"></i> Blog</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="#cv"><i class="fas fa-file-alt"></i> CV</a></li>
+                <li><a href="#certificates"><i class="fas fa-certificate"></i> Certificates</a></li>
+                <li><button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Victor Mulinge Muendo</h1>
+            <p>ICT Student & Backend Developer</p>
+            <a href="#contact" class="cta"><i class="fas fa-paper-plane"></i> Get in Touch</a>
+        </div>
+    </section>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Victor Mulinge Muendo, 
+  <h3>Professional IT Expert & Software Engineer</h3>
+
+With over a decade of experience in the IT industry, Victor has successfully navigated the ever-evolving landscape of technology. His journey began as a passionate coder, and over the years, he has risen to become a well-rounded professional.
+
+Victor specializes in developing scalable and efficient solutions for complex problems. He has contributed to the success of various projects, demonstrating proficiency in a wide range of programming languages, frameworks, and tools. His commitment to excellence has earned him recognition for delivering high-quality software products on time and within budget.
+
+As a Front-end maestro, Victor crafts seamless user experiences that captivate and engage. On the Back-end, he architects robust systems that ensure reliability and performance. His proficiency in both areas allows him to bridge the gap between design and functionality seamlessly.
+
+Victor's commitment to ongoing learning is evident in his pursuit of cutting-edge technologies. He avidly explores new avenues to enhance project efficiency and stay ahead of industry trends. His inquisitive nature and problem-solving skills make him a sought-after mentor among his peers.
+
+Beyond his technical prowess, Victor is known for his humility and collaborative spirit. He thrives in team environments, fostering open communication and sharing his expertise generously. Colleagues appreciate his ability to lead with empathy and inspire others to reach their full potential.
+
+Victor's dedication to his work is paralleled by his faith. He approaches challenges with a calm demeanor and relies on his strong moral compass to navigate ethical considerations in the ever-changing world of technology. A God-fearing individual, Victor brings integrity, honesty, and a sense of purpose to every project he undertakes.</p>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <canvas id="skillsChart"></canvas>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <h3><i class="fas fa-school"></i> Student Management System</h3>
+                <p>A comprehensive system for managing student data, including enrollment, grades, and attendance.</p>
+                <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="project">
+                <h3><i class="fas fa-shopping-cart"></i> E-commerce Backend</h3>
+                <p>A robust backend for an e-commerce platform, handling product management, orders, and user authentication.</p>
+                <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="project">
+                <h3><i class="fas fa-chart-line"></i> Financial Tracker</h3>
+                <p>An application to track income, expenses, and debts, providing users with detailed financial insights.</p>
+                <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="project">
+                <h3><i class="fas fa-church"></i> Church Management App</h3>
+                <p>A tool for managing church activities, including events, member registrations, and communication.</p>
+                <a href="https://nthangathini.vercel.app/" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="project">
+                <h3><i class="fas fa-user"></i> Personal App</h3>
+                <p>An app designed to help users manage personal information, schedules, and tasks efficiently.</p>
+                <a href="https://sermonsbyvictor.vercel.app" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="project">
+                <h3><i class="fas fa-heart"></i> Love Calculator</h3>
+                <p>A fun app that calculates the compatibility between two people based on various metrics.</p>
+                <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="project">
+                <h3><i class="fas fa-bug"></i> Pest Control Advertising App</h3>
+                <p>An advertising platform specifically targeting pest control services, connecting providers with potential customers.</p>
+                <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="project">
+                <h3><i class="fas fa-seedling"></i> GreenGuid App</h3>
+                <p>An app promoting sustainable practices by providing tips, resources, and community support for green living.</p>
+                <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="project">
+                <h3><i class="fas fa-mobile-alt"></i> SuperTel Data Bundle Generator</h3>
+                <p>An application offering users various data bundle options, optimizing their mobile internet usage.</p>
+                <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <section id="blog">
+        <h2>Blog</h2>
+        <div class="blog-container">
+            <div class="blog-post">
+                <h3><i class="fas fa-rss"></i> Latest Trends in Backend Development</h3>
+                <p>An overview of the latest technologies and practices in backend development.</p>
+                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="blog-post">
+                <h3><i class="fas fa-database"></i> How to Optimize Your Database Queries</h3>
+                <p>Tips and tricks to ensure your database queries are efficient and fast.</p>
+                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="cv">
+        <h2>Curriculum Vitae</h2>
+        <p>Download my latest CV to learn more about my professional experience and educational background.</p>
+        <a href="Victor_Mulinge_Muendo_CV (2).pdf" class="cv-link" download><i class="fas fa-file-pdf"></i> Download CV</a>
+    </section>
+    
+    <section id="certificates">
+        <h2>Certificates</h2>
+        <p>Here are some of the certificates I've earned that showcase my skills and achievements.</p>
+        <div class="certificates-container">
+            <div class="certificate">
+                <h3><i class="fas fa-certificate"></i> KCPE Certificate</h3>
+                <p>Certificate of completion for the Kenya Certificate of Primary Education (KCPE).</p>
+                <a href="kcpe.pdf" class="certificate-link" download><i class="fas fa-file-pdf"></i> View Certificate</a>
+            </div>
+            <div class="certificate">
+                <h3><i class="fas fa-certificate"></i> KCSE Certificate</h3>
+                <p>Certificate of completion for the Kenya Certificate of Secondary Education (KCSE).</p>
+                <a href="kcse_certificate.pdf" class="certificate-link" download><i class="fas fa-file-pdf"></i> View Certificate</a>
+            </div>
+            <div class="certificate">
+                <h3><i class="fas fa-certificate"></i> Backend Developer Certificate</h3>
+                <p>Certification for backend development skills, demonstrating expertise in server-side technologies.</p>
+                <a href="Muendo V. Mulinge .pdf" class="certificate-link" download><i class="fas fa-file-pdf"></i> View Certificate</a>
+            </div>
+            <div class="certificate">
+                <h3><i class="fas fa-certificate"></i> ICT Certificate</h3>
+                <p>Certificate in Information and Communication Technology, covering various aspects of ICT.</p>
+                <a href="#" class="certificate-link" download><i class="fas fa-file-pdf"></i> View Certificate</a>
+            </div>
+            <div class="certificate">
+                <h3><i class="fas fa-certificate"></i> Other Certificates</h3>
+                <p>Additional certifications relevant to my field and professional development.</p>
+                <a href="DOCUMENT 2.pdf" class="certificate-link" download><i class="fas fa-file-pdf"></i> View Certificates</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name"><i class="fas fa-user"></i> Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email"><i class="fas fa-envelope"></i> Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message"><i class="fas fa-comment"></i> Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit"><i class="fas fa-paper-plane"></i> Send</button>
+        </form>
+    </section>
+    <section id="future-goals">
+        <h2>Future Goals</h2>
+        <p>As I continue to grow in my career, I aim to achieve the following goals:</p>
+        <ul>
+            <li><strong>Become a Lead Backend Developer:</strong> I aspire to lead teams in designing and implementing scalable backend systems.</li>
+            <li><strong>Explore Emerging Technologies:</strong> I am keen on exploring and incorporating new technologies such as AI and blockchain into my projects.</li>
+            <li><strong>Contribute to Open Source:</strong> I plan to contribute to open source projects to collaborate with other developers and give back to the community.</li>
+            <li><strong>Advance My Education:</strong> I aim to pursue advanced studies or certifications in emerging areas of technology to stay ahead in the field.</li>
+            <li><strong>Launch Innovative Products:</strong> My goal is to create and launch innovative products that solve real-world problems and make a positive impact.</li>
+        </ul>
+        <p>By setting these goals, I am committed to continuous learning and growth in the tech industry, striving to reach new heights in my career.</p>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <p>&copy; 2024 Victor Mulinge Muendo. All rights reserved.</p>
+                <p>1234 Elm Street, City, Country</p>
+                <p>Email: <a href="mailto:victormulinge92@gmail.com">victormulinge92@gmail.com</a></p>
+                <p>Phone: <a href="tel:+254758538836">+254  758 538 836</a></p>
+            </div>
+            <div class="footer-right">
+                <a href="#about">About Me</a> |
+                <a href="#skills">Skills</a> |
+                <a href="#projects">Projects</a> |
+                
+                <a href="#blog">Blog</a> |
+                <a href="#contact">Contact</a> |
+                <a href="#Victor_Mulinge_Muendo_CV (2).pdf">CV</a> |
+                <a href="#certificates">Certificates</a>
+                <a href="#future-goals">Future Goals</a>
+            </div>
+        </div>
+        <div class="footer-subscription">
+            <h3>Subscribe to my newsletter</h3>
+            <form>
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit"><i class="fas fa-paper-plane"></i> Subscribe</button>
+            </form>
+        </div>
+        <div class="footer-icons">
+            <a href="https://www.facebook.com/sermonhub" class="fab fa-facebook-f" target="_blank" rel="noopener noreferrer"></a>
+            <a href="https://twitter.com/VictorMuli9545" class="fab fa-twitter" target="_blank" rel="noopener noreferrer"></a>
+            <a href="https://linkedin.com/in/victor-mulinge-0a87812a6" class="fab fa-linkedin-in" target="_blank" rel="noopener noreferrer"></a>
+            <a href="https://github.com/metroliv" class="fab fa-github" target="_blank" rel="noopener noreferrer"></a>
+            <a href="https://wa.me/+254758538836" class="fab fa-whatsapp" target="_blank" rel="noopener noreferrer"></a>
+            <a href="https://t.me/+254758538836" class="fab fa-telegram-plane" target="_blank" rel="noopener noreferrer"></a>
+        </div>
+        <div class="footer-legal">
+            <a href="#privacy-policy">Privacy Policy</a> |
+            <a href="#terms-of-service">Terms of Service</a> |
+            <a href="#sitemap">Sitemap</a>
+        </div>
+        <div class="footer-awards">
+            <h3>Awards & Recognitions</h3>
+            <p>Best Developer Award 2023</p>
+            <p>Top 10 Innovators in Tech 2024</p>
+        </div>
+        <div class="footer-popular-posts">
+            <h3>Popular Posts</h3>
+            <ul>
+                <li><a href="#">Latest Trends in Backend Development</a></li>
+                <li><a href="#">How to Optimize Your Database Queries</a></li>
+            </ul>
+        </div>
+        <div class="footer-language-selector">
+            <h3>Select Language</h3>
+            <select>
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+            </select>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
